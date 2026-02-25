@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		871050422F1574DF003CBDEA /* CodeBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87BA3C072F46060D00402552 /* WordGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		871050442F1574DF003CBDEA /* CodeBreaker */ = {
+		87BA3C092F46060D00402552 /* WordGuesser */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CodeBreaker;
+			path = WordGuesser;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8710503F2F1574DF003CBDEA /* Frameworks */ = {
+		87BA3C042F46060D00402552 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		871050392F1574DF003CBDEA = {
+		87BA3BFE2F46060D00402552 = {
 			isa = PBXGroup;
 			children = (
-				871050442F1574DF003CBDEA /* CodeBreaker */,
-				871050432F1574DF003CBDEA /* Products */,
+				87BA3C092F46060D00402552 /* WordGuesser */,
+				87BA3C082F46060D00402552 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		871050432F1574DF003CBDEA /* Products */ = {
+		87BA3C082F46060D00402552 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				871050422F1574DF003CBDEA /* CodeBreaker.app */,
+				87BA3C072F46060D00402552 /* WordGuesser.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		871050412F1574DF003CBDEA /* CodeBreaker */ = {
+		87BA3C062F46060D00402552 /* WordGuesser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8710504D2F1574E0003CBDEA /* Build configuration list for PBXNativeTarget "CodeBreaker" */;
+			buildConfigurationList = 87BA3C122F46060E00402552 /* Build configuration list for PBXNativeTarget "WordGuesser" */;
 			buildPhases = (
-				8710503E2F1574DF003CBDEA /* Sources */,
-				8710503F2F1574DF003CBDEA /* Frameworks */,
-				871050402F1574DF003CBDEA /* Resources */,
+				87BA3C032F46060D00402552 /* Sources */,
+				87BA3C042F46060D00402552 /* Frameworks */,
+				87BA3C052F46060D00402552 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				871050442F1574DF003CBDEA /* CodeBreaker */,
+				87BA3C092F46060D00402552 /* WordGuesser */,
 			);
-			name = CodeBreaker;
+			name = WordGuesser;
 			packageProductDependencies = (
 			);
-			productName = CodeBreaker;
-			productReference = 871050422F1574DF003CBDEA /* CodeBreaker.app */;
+			productName = WordGuesser;
+			productReference = 87BA3C072F46060D00402552 /* WordGuesser.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8710503A2F1574DF003CBDEA /* Project object */ = {
+		87BA3BFF2F46060D00402552 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					871050412F1574DF003CBDEA = {
+					87BA3C062F46060D00402552 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = 8710503D2F1574DF003CBDEA /* Build configuration list for PBXProject "CodeBreaker" */;
+			buildConfigurationList = 87BA3C022F46060D00402552 /* Build configuration list for PBXProject "WordGuesser" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 871050392F1574DF003CBDEA;
+			mainGroup = 87BA3BFE2F46060D00402552;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 871050432F1574DF003CBDEA /* Products */;
+			productRefGroup = 87BA3C082F46060D00402552 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				871050412F1574DF003CBDEA /* CodeBreaker */,
+				87BA3C062F46060D00402552 /* WordGuesser */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		871050402F1574DF003CBDEA /* Resources */ = {
+		87BA3C052F46060D00402552 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8710503E2F1574DF003CBDEA /* Sources */ = {
+		87BA3C032F46060D00402552 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8710504B2F1574E0003CBDEA /* Debug */ = {
+		87BA3C102F46060E00402552 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		8710504C2F1574E0003CBDEA /* Release */ = {
+		87BA3C112F46060E00402552 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +241,7 @@
 			};
 			name = Release;
 		};
-		8710504E2F1574E0003CBDEA /* Debug */ = {
+		87BA3C132F46060E00402552 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -269,7 +269,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.holovielab.CodeBreaker;
+				PRODUCT_BUNDLE_IDENTIFIER = org.holovielab.WordGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -286,7 +286,7 @@
 			};
 			name = Debug;
 		};
-		8710504F2F1574E0003CBDEA /* Release */ = {
+		87BA3C142F46060E00402552 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -314,7 +314,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.holovielab.CodeBreaker;
+				PRODUCT_BUNDLE_IDENTIFIER = org.holovielab.WordGuesser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -334,25 +334,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8710503D2F1574DF003CBDEA /* Build configuration list for PBXProject "CodeBreaker" */ = {
+		87BA3C022F46060D00402552 /* Build configuration list for PBXProject "WordGuesser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8710504B2F1574E0003CBDEA /* Debug */,
-				8710504C2F1574E0003CBDEA /* Release */,
+				87BA3C102F46060E00402552 /* Debug */,
+				87BA3C112F46060E00402552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8710504D2F1574E0003CBDEA /* Build configuration list for PBXNativeTarget "CodeBreaker" */ = {
+		87BA3C122F46060E00402552 /* Build configuration list for PBXNativeTarget "WordGuesser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8710504E2F1574E0003CBDEA /* Debug */,
-				8710504F2F1574E0003CBDEA /* Release */,
+				87BA3C132F46060E00402552 /* Debug */,
+				87BA3C142F46060E00402552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8710503A2F1574DF003CBDEA /* Project object */;
+	rootObject = 87BA3BFF2F46060D00402552 /* Project object */;
 }

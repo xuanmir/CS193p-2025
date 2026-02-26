@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContainerDimensionsView2: View {
-    @State private var viewWidth: Double = 64
-    @State private var viewHeight: Double = 64
+    @State private var containerWidth: Double = 64
+    @State private var containerHeight: Double = 64
     
     var body: some View {
         RoundedRectangle(cornerRadius: 8)
@@ -17,8 +17,8 @@ struct ContainerDimensionsView2: View {
             .strokeBorder(.purple, style: .init(dash: [4, 4]))
             .overlay {
                 VStack {
-                    Text(viewWidth.rounded().formatted())
-                    Text(viewHeight.rounded().formatted())
+                    Text(containerWidth.rounded().formatted())
+                    Text(containerHeight.rounded().formatted())
                 }
                 .flexibleSystemFont()
                 .padding(4)
@@ -26,8 +26,8 @@ struct ContainerDimensionsView2: View {
             .onGeometryChange(for: CGSize.self ) { geometry in
                 geometry.size
             } action: { newValue in
-                viewWidth = newValue.width
-                viewHeight = newValue.height
+                containerWidth = newValue.width
+                containerHeight = newValue.height
             }
     }
 }

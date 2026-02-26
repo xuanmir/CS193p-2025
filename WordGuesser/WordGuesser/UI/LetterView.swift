@@ -10,6 +10,7 @@ import SwiftUI
 struct LetterView: View {
     // MARK: Data In
     let letter: Letter
+    var letterAspectRatio: Double = 3/4
     var letterColor: Color = .gray
     var displayingLetterStroke: Bool = false
     var overlayContainerDimensions: Bool = false
@@ -24,7 +25,7 @@ struct LetterView: View {
             .fill(letterColor.opacity(0.25))
             .strokeBorder(displayingLetterStroke ? .gray.opacity(0.5) : .clear)
             .contentShape(letterShape)
-            .aspectRatio(3/4, contentMode: .fit)
+            .aspectRatio(letterAspectRatio, contentMode: .fit)
             .overlay {
                 Text(letter)
                     .flexibleSystemFont()

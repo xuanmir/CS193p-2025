@@ -78,7 +78,7 @@ struct WordGuesserView: View {
                 game.wordToGuess = newWord
                 print("task() -> { wordToGuess = \"\(game.wordToGuess.word)\" }")
             }
-//            .frame(maxWidth: 375)
+//            .frame(maxWidth: 375, maxHeight: 734) // Simulate iPhone XS screen
         }
     }
             

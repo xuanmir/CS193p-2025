@@ -14,6 +14,21 @@ struct KeyboardRowView: View {
     
     // MARK: - Body
     
+    var letterAspectRatio: Double = 3/4
+    let letterWidth: Double = 33
+    let gapWidth: Double = 4
+    let maxNumberOfLetters: Double = 10
+    private var maxNumberOfGaps: Double {
+        maxNumberOfLetters - 1
+    }
+    private var letterHeight: Double {
+        letterWidth / letterAspectRatio
+    }
+    private var rowAspectRatio: Double {
+        // ((10*33)+(9*4))/44
+        ((maxNumberOfLetters*letterWidth)+(maxNumberOfGaps*gapWidth))/letterHeight
+    }
+    
     var body: some View {
         HStack(spacing: 4) {
             ForEach(letters, id: \.self) { letter in
@@ -21,15 +36,17 @@ struct KeyboardRowView: View {
 //                        onChoose?(letter)
                     print("key() -> \"\(letter)\"")
                 } label: {
-                    LetterView(letter: letter, overlayContainerDimensions: overlayContainerDimensions)
+                    LetterView(letter: letter, letterAspectRatio: letterAspectRatio, overlayContainerDimensions: overlayContainerDimensions)
                 }
                 .buttonStyle(.plain)
             }
         }
         // ((maxNumberOfLetters*letterWidth)+(maxNumberOfGaps*gapWidth))/letterHeight
-        .aspectRatio(((10*33)+(9*4))/44, contentMode: .fit)
-        .frame(maxWidth: 370, maxHeight: 44)
-        .frame(minWidth: 343, minHeight: 40)
+//        .aspectRatio(((10*33)+(9*4))/44, contentMode: .fit)
+//        .frame(maxWidth: 370, maxHeight: 44)
+//        .frame(minWidth: 343, minHeight: 40)
+        .aspectRatio(rowAspectRatio, contentMode: .fit)
+        .frame(maxWidth: 370, maxHeight: letterHeight)
     }
 }
 

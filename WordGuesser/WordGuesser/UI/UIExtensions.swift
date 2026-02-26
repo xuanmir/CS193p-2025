@@ -21,12 +21,20 @@ extension AnyTransition {
     }
 }
 
-//extension ShapeStyle where Self == Color {
-//    /// A butter color suitable for use in UI elements.
-//    public static var butter: Color {
-//        Color(hue: 48/360, saturation: 26/100, brightness: 98/100, opacity: 100/100)
-//    }
-//}
+extension ShapeStyle where Self == Color {
+    /// A butter color suitable for use in UI elements.
+    public static var butter: Color {
+        Color(hue: 48/360, saturation: 26/100, brightness: 98/100, opacity: 100/100)
+    }
+    
+    public static var backgroundDark: Color {
+        Color.blue.opacity(0.8).exposureAdjust(-4)
+    }
+    
+    public static var backgroundLight: Color {
+        Color.blue.opacity(0.8)
+    }
+}
 
 extension View {
     func flexibleSystemFont(minimum: CGFloat = 8, maximum: CGFloat = 64) -> some View {

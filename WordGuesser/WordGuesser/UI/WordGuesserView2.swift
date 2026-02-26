@@ -16,7 +16,7 @@ struct WordGuesserView2: View {
     @State private var selection: Int = 0
     @State private var restarting: Bool = false
     
-    @State private var isShowingContainerDimensions: Bool = true
+    @State private var isShowingContainerDimensions: Bool = false
     @State private var isShowingKeyboard: Bool = true
     
     // Do we really need this ?

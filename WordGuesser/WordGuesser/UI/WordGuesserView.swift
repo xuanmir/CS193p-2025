@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WordGuesserView: View {
     // MARK: Data In
+    @Environment(\.colorScheme) var colorScheme
     @Environment(\.words) var words
     
     // MARK: Data owned by this View
@@ -16,7 +17,7 @@ struct WordGuesserView: View {
     @State private var selection: Int = 0
     @State private var restarting: Bool = false
     
-    @State private var isShowingContainerDimensions: Bool = true
+    @State private var isShowingContainerDimensions: Bool = false
     @State private var isShowingKeyboard: Bool = true
     
     // MARK: - Body
@@ -61,19 +62,22 @@ struct WordGuesserView: View {
                         print("keyboard() -> { isShowingKeyboard = \(isShowingKeyboard) }")
                     }
                 }
-                .buttonStyle(.bordered)
-                // Requires iOS 26.0 or newer
-//                .buttonSizing(.flexible)
+                .buttonStyle(.glass)
+                .buttonSizing(.flexible) // Requires iOS 26.0 or newer
 
                 if isShowingKeyboard {
-                    KeyboardView()
+                    GlassKeyboardView()
                         .transition(.keyboard)
+                    
+//                    KeyboardView()
+//                        .transition(.keyboard)
                     
 //                    KeyboardView(overlayContainerDimensions: true)
 //                        .transition(.keyboard)
                 }
             }
             .padding()
+//            .background(colorScheme == .dark ? .backgroundDark : .backgroundLight)
             .task {
                 game.wordToGuess = newWord
                 print("task() -> { wordToGuess = \"\(game.wordToGuess.word)\" }")
